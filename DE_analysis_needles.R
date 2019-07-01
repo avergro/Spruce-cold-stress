@@ -46,7 +46,7 @@ dir.create(outdir,showWarnings=FALSE)
 ### ==============================
 ##  read the samples details
 ### ==============================/
-samples <- read.csv("~/samples2.csv", head=T, sep=",")
+samples <- read.csv("~/samples_needles.csv", head=T, sep=",")
 samples
 ### ==================================================================
 ## read the HTSeq files in a matrix

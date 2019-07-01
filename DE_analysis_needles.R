@@ -33,23 +33,23 @@ source("~/Git/UPSCb/src/R/rmd.R")
 library(limma)
 
 ### ==============================
-## 1.2 set the working directory
+## set the working directory
 ### ==============================
 setwd("/mnt/picea/projects/spruce/vhurry/COLD_STRESS/cold-stress-needles")
 
 #' Create a result dir
-system("mkdir DE_Needles_DATA_2017_manuscript_REMOVING_6_OUTLIERS")
-outdir <- file.path("DE_Needles_DATA_2017_manuscript_REMOVING_6_OUTLIERS")
+system("mkdir DE_Needles")
+outdir <- file.path("DE_Needles")
 dir.create(outdir,showWarnings=FALSE)
 
 
 ### ==============================
-## 1.3 read the samples details
+##  read the samples details
 ### ==============================/
 samples <- read.csv("~/Git/UPSCb/projects/spruce_cold_stress/spruce-needles-cold-stress/samples2.csv", head=T, sep=",")
 samples
 ### ==============================
-## 1.4 read the HTSeq files in a matrix
+## read the HTSeq files in a matrix
 ## names are set according to the sample.csv!
 ### ==============================
 res <- mclapply(dir("htseq_without_6_outliers",pattern="*.txt",full.names=TRUE),function(fil){
@@ -60,21 +60,19 @@ names(res) <- sub(".*_P1554_","",sub("_sortmerna_trimmomatic_STAR.txt","",dir("h
 names(res) <- samples$SampleName[match(names(res),samples$ID)]
 
 ### ==============================
-## 1.5 get the count table 
+## get the count table 
 ### ==============================
 addInfo <- c("__no_feature","__ambiguous","__too_low_aQual","__not_aligned","__alignment_not_unique")
-#addInfo <- c("no_feature","ambiguous","too_low_aQual","not_aligned","alignment_not_unique")
 sel <- match(addInfo,res[[1]][,1])
-count.table <- do.call(cbind,lapply(res,"[",3))[-sel,]  #antes era 3 en vez de 2 !!!
+count.table <- do.call(cbind,lapply(res,"[",3))[-sel,]  
 colnames(count.table) <- names(res)
 rownames(count.table) <- res[[1]][,1][-sel]
 
 count.table <- count.table[,order(colnames(count.table))]
 head(count.table)
-#ACA VOY y count table esta Ok
 dim(count.table)
 ### ===========2. Creat the frame of work ===================
-## 2.1 Create filters
+## Create filters
 ### ==============================
 names <- colnames(count.table)
 samples <- substr(x=colnames(count.table),1,10)
@@ -82,7 +80,7 @@ treatments <- substr(x=colnames(count.table),1,8)
 
 
 ### ==============================
-## 2.2 create the design matrix - this is the design for my biological question
+## create the design matrix - this is the design for my biological question
 ### ==============================
 df <- data.frame (
   name=names,
@@ -94,7 +92,7 @@ head(df)
 
 
 ### ==============================
-## 2.2 create dds object
+## create dds object
 ### ==============================
 ###### Simple way
 dds <- DESeqDataSetFromMatrix(countData = count.table,
@@ -188,7 +186,7 @@ setMethod(f="plotMA",
           })
 
 ##########################################################
-####============5. Comparison of groups ==================
+####============ Comparison of groups ==================
 ##########################################################
 
 dds <- DESeq(dds)
@@ -361,7 +359,6 @@ sessionInfo()
 ## [7] backports_1.1.0 acepack_1.4.1
 ## [9] RSQLite_2.0 evaluate_0.10
 ## [11] BiocInstaller_1.26.0 ggplot2_2.2.1
-25
 ## [13] zlibbioc_1.22.0 rlang_0.1.1
 ## [15] lazyeval_0.2.0 data.table_1.10.4
 ## [17] annotate_1.54.0 blob_1.1.0

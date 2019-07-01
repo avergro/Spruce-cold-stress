@@ -323,6 +323,70 @@ write.table(res7,file.path(outdir,"control_vs_10d_-5_°C.txt"))
 # Session Info
 sessionInfo()
 
+## R version 3.4.0 (2017-04-21)
+## Platform: x86_64-pc-linux-gnu (64-bit)
+## Running under: Ubuntu 16.04.2 LTS
+##
+## Matrix products: default
+## BLAS: /usr/lib/openblas-base/libblas.so.3
+## LAPACK: /usr/lib/libopenblasp-r0.2.18.so
+##
+## locale:
+## [1] LC_CTYPE=en_US.UTF-8 LC_NUMERIC=C
+## [3] LC_TIME=en_US.UTF-8 LC_COLLATE=en_US.UTF-8
+## [5] LC_MONETARY=en_US.UTF-8 LC_MESSAGES=en_US.UTF-8
+## [7] LC_PAPER=en_US.UTF-8 LC_NAME=C
+## [9] LC_ADDRESS=C LC_TELEPHONE=C
+## [11] LC_MEASUREMENT=en_US.UTF-8 LC_IDENTIFICATION=C
+##
+## attached base packages:
+## [1] parallel stats4 stats graphics grDevices utils datasets
+## [8] methods base
+##
+## other attached packages:
+## [1] limma_3.32.2 stringr_1.2.0
+## [3] knitr_1.16 LSD_3.0
+## [5] scatterplot3d_0.3-40 vsn_3.44.0
+## [7] RColorBrewer_1.1-2 DESeq2_1.16.1
+## [9] SummarizedExperiment_1.6.3 DelayedArray_0.2.7
+## [11] matrixStats_0.52.2 Biobase_2.36.2
+## [13] GenomicRanges_1.28.3 GenomeInfoDb_1.12.2
+## [15] IRanges_2.10.2 S4Vectors_0.14.3
+## [17] BiocGenerics_0.22.0
+##
+## loaded via a namespace (and not attached):
+## [1] Rcpp_0.12.11 locfit_1.5-9.1
+## [3] lattice_0.20-35 rprojroot_1.2
+## [5] digest_0.6.12 plyr_1.8.4
+## [7] backports_1.1.0 acepack_1.4.1
+## [9] RSQLite_2.0 evaluate_0.10
+## [11] BiocInstaller_1.26.0 ggplot2_2.2.1
+25
+## [13] zlibbioc_1.22.0 rlang_0.1.1
+## [15] lazyeval_0.2.0 data.table_1.10.4
+## [17] annotate_1.54.0 blob_1.1.0
+## [19] rpart_4.1-11 Matrix_1.2-10
+## [21] preprocessCore_1.38.1 checkmate_1.8.2
+## [23] rmarkdown_1.6 splines_3.4.0
+## [25] BiocParallel_1.10.1 geneplotter_1.54.0
+## [27] foreign_0.8-68 htmlwidgets_0.8
+## [29] RCurl_1.95-4.8 bit_1.1-12
+## [31] munsell_0.4.3 compiler_3.4.0
+## [33] base64enc_0.1-3 htmltools_0.3.6
+## [35] nnet_7.3-12 tibble_1.3.3
+## [37] gridExtra_2.2.1 htmlTable_1.9
+## [39] GenomeInfoDbData_0.99.0 Hmisc_4.0-3
+## [41] XML_3.98-1.9 bitops_1.0-6
+## [43] grid_3.4.0 xtable_1.8-2
+## [45] gtable_0.2.0 affy_1.54.0
+## [47] DBI_0.7 magrittr_1.5
+## [49] scales_0.4.1 stringi_1.1.5
+## [51] XVector_0.16.0 genefilter_1.58.1
+## [53] affyio_1.46.0 latticeExtra_0.6-28
+## [55] Formula_1.2-1 tools_3.4.0
+## [57] bit64_0.9-7 survival_2.41-3
+## [59] AnnotationDbi_1.38.1 colorspace_1.3-2
+## [61] cluster_2.0.6 memoise_1.1.0
 
 ###### End
 

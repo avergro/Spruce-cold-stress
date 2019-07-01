@@ -150,9 +150,6 @@ vsd <- varianceStabilizingTransformation(dds, blind=TRUE)
 vst <- assay(vsd)
 colnames(vst) <- colnames(count.table)
 
-#####Next line must be comment if you really need the real VST values
-#vst <- vst - min(vst)  #To print out real VST values we comment this line which was created just to obtain always a zero value for each gene profile 
-
 write.csv(vst,file.path(outdir,"VST_library-size-normalized_data_15_samples_ATH_Leaves_Phase1.csv"))
 
 #' Validate the VST 

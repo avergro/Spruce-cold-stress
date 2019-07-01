@@ -10,9 +10,9 @@
 #' # Setup
 #' # Environment
 #' Set the working dir
-setwd("/mnt/picea/projects/spruce/vhurry/COLD_STRESS/cold-stress-needles")
+setwd("~/cold-stress-needles")
 #' ```{r set up, echo=FALSE}
-#' knitr::opts_knit$set(root.dir="/mnt/picea/projects/spruce/vhurry/COLD_STRESS/cold-stress-needles")
+#' knitr::opts_knit$set(root.dir="~/cold-stress-needles")
 #' ```
 
 #' Load libraries

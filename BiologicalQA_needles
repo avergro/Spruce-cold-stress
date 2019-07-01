@@ -149,9 +149,6 @@ vsd <- varianceStabilizingTransformation(dds, blind=TRUE)
 vst <- assay(vsd)
 colnames(vst) <- colnames(count.table)
 
-#####Next line must be comment if you really need the real VST values
-#vst <- vst - min(vst)  #To print out real VST values we comment this line which was created just to obtain always a zero value for each gene profile 
-
 write.csv(vst,file.path(outdir,"VST_library-size-normalized_data_45_samples_Needles.csv"))
 
 
@@ -185,9 +182,6 @@ percent <- round(summary(pc)$importance[2,]*100)
 
 mar=c(5.1,4.1,4.1,8.1, xpd=TRUE)
 #mar – A numeric vector of length 4, which sets the margin sizes in the 
-#following order: bottom, left, top, and right. 
-#The default is c(5.1, 4.1, 4.1, 2.1).
-
 
 s3d <- scatterplot3d(pc$x[,1],
               pc$x[,2],

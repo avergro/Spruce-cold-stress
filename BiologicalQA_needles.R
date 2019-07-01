@@ -36,7 +36,7 @@ pal <- brewer.pal(8,"Dark2")
 mar <- par("mar")
 
 #' Read the sample information
-samples <- read.csv("~/samples2.csv")
+samples <- read.csv("~/samples_needles.csv")
 head(samples)
 samples$ID
 #' Create a result dir

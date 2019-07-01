@@ -1,0 +1,16 @@
+SampleName,ID,SampleID
+control_1,ATH_control_1,control
+control_2,ATH_control_2,control
+control_3,ATH_control_3,control
+6h_1,ATH_6h_5°C_1,6h
+6h_2,ATH_6h_5°C_2,6h
+6h_3,ATH_6h_5°C_3,6h
+24h_1,ATH_24h_5°C_1,24h
+24h_2,ATH_24h_5°C_2,24h
+24h_3,ATH_24h_5°C_3,24h
+3d_1,ATH_3d_5°C_1,3d
+3d_2,ATH_3d_5°C_2,3d
+3d_3,ATH_3d_5°C_3,3d
+10d_1,ATH_10d_5°C_1,10d
+10d_2,ATH_10d_5°C_2,10d
+10d_3,ATH_10d_5°C_3,10d

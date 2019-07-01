@@ -18,8 +18,8 @@ setwd("/mnt/picea/projects/spruce/vhurry/COLD_STRESS/cold-stress-needles")
 #' ```
 #' 
 #' 
-### ============= 1. Start and set-up of the data =================
-## 1.1 load the necessary libraries
+### ============= Start and set-up of the data =================
+## load the necessary libraries
 ### ==============================
 suppressPackageStartupMessages(library(DESeq2))
 suppressPackageStartupMessages(library(RColorBrewer))
@@ -48,10 +48,13 @@ dir.create(outdir,showWarnings=FALSE)
 ### ==============================/
 samples <- read.csv("~/Git/UPSCb/projects/spruce_cold_stress/spruce-needles-cold-stress/samples2.csv", head=T, sep=",")
 samples
-### ==============================
+### ==================================================================
 ## read the HTSeq files in a matrix
-## names are set according to the sample.csv!
-### ==============================
+## names are set according to the sample.csv
+## the removed outluier were selected based on PCA results 
+## For needles in total 6 outliers samples were identified and removed of htseq_without_6_outliers dorectory
+## (P1554_130, P1554_135, P1554_142, P1554_119, P1554_116, P1554_105)
+### ==================================================================
 res <- mclapply(dir("htseq_without_6_outliers",pattern="*.txt",full.names=TRUE),function(fil){
   read.delim(fil,header=FALSE,stringsAsFactors=FALSE)
 },mc.cores=9)
@@ -71,7 +74,7 @@ rownames(count.table) <- res[[1]][,1][-sel]
 count.table <- count.table[,order(colnames(count.table))]
 head(count.table)
 dim(count.table)
-### ===========2. Creat the frame of work ===================
+### =========== Creat the frame of work ===================
 ## Create filters
 ### ==============================
 names <- colnames(count.table)
@@ -109,12 +112,12 @@ sizeFactors(dds)
 dds <- estimateDispersions(dds)
 plotDispEsts(dds)
 
-### ===========3. Negative binomial Wald Test===================
+### =========== Negative binomial Wald Test===================
 ## run the test - negative binomial Wald test (takes a long time!)
 ### ==============================
 dds <- nbinomWaldTest(dds)
 
-### ===========4. Methods and Functions===================
+### =========== Methods and Functions===================
 ## 
 ### ==============================
 setGeneric(name="VolcanoPlotMA",def=function(object,alpha=0.01){

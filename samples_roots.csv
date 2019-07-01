@@ -1,0 +1,28 @@
+SampleName,ID,SampleID,Temperature,Sample
+control__1,101,control,control,control
+control__2,102,control,control,control
+control__3,103,control,control,control
+6h 5°C___1,104,6h 5°C,5°C,6h
+6h 5°C___2,105,6h 5°C,5°C,6h
+6h 5°C___3,106,6h 5°C,5°C,6h
+24h 5°C__1,107,24h 5°C,5°C,24h
+24h 5°C__2,108,24h 5°C,5°C,24h
+24h 5°C__3,109,24h 5°C,5°C,24h
+3d 5°C___1,110,3d 5°C,5°C,3d
+3d 5°C___2,111,3d 5°C,5°C,3d
+3d 5°C___3,112,3d 5°C,5°C,3d
+10d 5°C__1,113,10d 5°C,5°C,10d
+10d 5°C__2,114,10d 5°C,5°C,10d
+10d 5°C__3,115,10d 5°C,5°C,10d
+6h -5°C__1,116,6h -5°C,-5°C,6h
+6h -5°C__2,117,6h -5°C,-5°C,6h
+6h -5°C__3,118,6h -5°C,-5°C,6h
+24h -5°C__1,119,24h -5°C,-5°C,24h
+24h -5°C__2,120,24h -5°C,-5°C,24h
+24h -5°C__3,121,24h -5°C,-5°C,24h
+3d -5°C__1,122,3d -5°C,-5°C,3d
+3d -5°C__2,123,3d -5°C,-5°C,3d
+3d -5°C__3,124,3d -5°C,-5°C,3d
+10d -5°C_1,125,10d -5°C,-5°C,10d
+10d -5°C_2,126,10d -5°C,-5°C,10d
+10d -5°C_3,127,10d -5°C,-5°C,10d

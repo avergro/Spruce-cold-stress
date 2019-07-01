@@ -1,6 +1,6 @@
 ## This script is doing DE analysis for needles
 ## alexander Vergara
-## July 10 2017
+## 
 #' ---
 #' title: "DE analysis needles cold stress data"
 #' author: "Alexander Vergara"
@@ -12,9 +12,9 @@
 #' ---
 #' # Setup
 #' Set the working dir
-setwd("/mnt/picea/projects/spruce/vhurry/COLD_STRESS/cold-stress-needles")
+setwd("~/cold-stress-needles")
 #' ```{r set up, echo=FALSE}
-#' knitr::opts_knit$set(root.dir="/mnt/picea/projects/spruce/vhurry/COLD_STRESS/cold-stress-needles")
+#' knitr::opts_knit$set(root.dir="~/cold-stress-needles")
 #' ```
 #' 
 #' 
@@ -35,7 +35,7 @@ library(limma)
 ### ==============================
 ## set the working directory
 ### ==============================
-setwd("/mnt/picea/projects/spruce/vhurry/COLD_STRESS/cold-stress-needles")
+setwd("~/cold-stress-needles")
 
 #' Create a result dir
 system("mkdir DE_Needles")
@@ -46,7 +46,7 @@ dir.create(outdir,showWarnings=FALSE)
 ### ==============================
 ##  read the samples details
 ### ==============================/
-samples <- read.csv("~/Git/UPSCb/projects/spruce_cold_stress/spruce-needles-cold-stress/samples2.csv", head=T, sep=",")
+samples <- read.csv("~/samples2.csv", head=T, sep=",")
 samples
 ### ==================================================================
 ## read the HTSeq files in a matrix

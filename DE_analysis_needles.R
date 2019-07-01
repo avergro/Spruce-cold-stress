@@ -1,5 +1,5 @@
-##This script is doing DE analysis for needles
-##alexander Vergara
+## This script is doing DE analysis for needles
+## alexander Vergara
 ## July 10 2017
 #' ---
 #' title: "DE analysis needles cold stress data"

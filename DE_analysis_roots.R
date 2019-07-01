@@ -1,7 +1,6 @@
 # title: DE analysis roots cold stress data
 # author: Alexander Vergara
-# Date: Jul 10 2017
-
+# 
 #' ---
 #' title: "DE analysis roots cold stress data"
 #' author: "Alexander Vergara"

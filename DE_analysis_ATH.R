@@ -1,5 +1,5 @@
 ##This script is doing DE analysis for ATH samples 
-##Nicolas Delhomme & Alexander Vergara
+##Alexander Vergara
 ## 
 
 #' ---
@@ -53,7 +53,8 @@ res <- mclapply(dir("HTSeq_samples_without_control1_and_3d_2_outlier",pattern="*
   read.delim(fil,header=FALSE,stringsAsFactors=FALSE)
 },mc.cores=9)
 names(res) <- sub("arabidopsis","ATH",dir("HTSeq_samples_without_control1_and_3d_2_outlier",pattern="*.txt"))
-
+#Previosly outliers were identified by PCA
+#Directory HTSeq_samples_without_control1_and_3d_2_outlier does not have selected outliers
 names(res) <- samples$ID
 ### ==============================
 ##  get the count table 
@@ -283,7 +284,7 @@ sessionInfo()
 ## [5] vsn_3.44.0 RColorBrewer_1.1-2
 ## [7] DESeq2_1.16.1 SummarizedExperiment_1.6.3
 ## [9] DelayedArray_0.2.7 matrixStats_0.52.2
-18
+
 ## [11] Biobase_2.36.2 GenomicRanges_1.28.3
 ## [13] GenomeInfoDb_1.12.2 IRanges_2.10.2
 ## [15] S4Vectors_0.14.3 BiocGenerics_0.22.0

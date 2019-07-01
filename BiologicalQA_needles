@@ -325,8 +325,6 @@ heatmap.2(vst[sel,],labRow = NA,trace = "none",cexCol = 0.6 )
 #The function takes 4 parameters:
 #(i) the expression matrix; 
 #(ii) a vector of "conditions" matching the columns in the expression matrix;
-#e.g. if you have 6 samples, 3 bio rep of "Control" and 3 bio rep of "Fertilised", then the vector will be 
-#"Control","Control","Control","Fertilised","Fertilised","Fertilised";
 #(iii) an expression cutoff X and 
 #(iv) a number of replicates cutoff Y.
 

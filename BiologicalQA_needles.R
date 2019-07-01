@@ -246,38 +246,7 @@ legend(6,5, legend = popIDs,
        inset = -0.25, xpd = TRUE, horiz = FALSE)
 
 ###########Done
-######################################################################################################################
-###So we need a mix of both above nomenclatures where shapes represent temperature and colors the time (sampleID)
-#We added another colums to samples object called "Sample" . This plot is wrong so try in the future fix that and 
-#show temperature with colors and time with shapes instead this way and check of course that all is fine using the 
-#previos PCA printed above
 
-#s3d <- scatterplot3d(pc$x[,1],
-#                     pc$x[,2],
-#                     pc$x[,3],
-#                     xlab=paste("Comp. 1 (",percent[1],"%)",sep=""),
-#                     ylab=paste("Comp. 2 (",percent[2],"%)",sep=""),
-#                     zlab=paste("Comp. 3 (",percent[3],"%)",sep=""),
-#                     color=as.numeric(samples$Sample),
-#                     pch=as.numeric(samples$Temperature),
-#                     y.margin.add=1)
-#s3d
-## add legend ...HOw can we add 2 legends?
-#legend(5, 1,
-#       c("freezing", "chillling","control"),
-#       cex = 0.8,
-#       pch = c(1,2,3))
-#par(mar=c(5, 4, 4, 2) + 0.1)
-##Now the colours:
-#legend(5, 5,
-#       c("control", "6h", "24h", "3d", "10d"),
-#       col = c("black", "darkgreen", "blue", "brown", "red"),
-#       cex = 0.8,
-#       lwd = 1, xpd = TRUE)
-
-###########Done
-##########################################################################################
-##########################################################################################
 ##########################################################################################
 #Now PCA using colours to distigish how deep the dots are in 3D and their names
 library(plot3D)

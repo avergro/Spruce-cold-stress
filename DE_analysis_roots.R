@@ -36,8 +36,8 @@ library(limma)
 ## 1.2 set the working directory
 ### ==============================
 #' Create a result dir
-system("mkdir DE_roots_DATA")
-outdir <- file.path("DE_roots_DATA")
+system("mkdir DE_roots")
+outdir <- file.path("DE_roots")
 dir.create(outdir,showWarnings=FALSE)
 
 ### ==============================

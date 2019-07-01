@@ -18,8 +18,8 @@ setwd("~/cold-stress-roots")
 #' ```
 
 
-### ============= 1. Start and set-up of the data =================
-## 1.1 load the necessary libraries
+### =============  Start and set-up of the data =================
+##  load the necessary libraries
 ### ==============================
 suppressPackageStartupMessages(library(DESeq2))
 suppressPackageStartupMessages(library(RColorBrewer))
@@ -32,7 +32,7 @@ source("~/Git/UPSCb/src/R/rmd.R")
 library(limma)
 
 ### ==============================
-## 1.2 set the working directory
+##  set the working directory
 ### ==============================
 #' Create a result dir
 system("mkdir DE_roots")
@@ -40,19 +40,18 @@ outdir <- file.path("DE_roots")
 dir.create(outdir,showWarnings=FALSE)
 
 ### ==============================
-## 1.3 read the samples details
+##  read the samples details
 ### ==============================
-samples <- read.csv("~/samples2.csv")
+samples <- read.csv("~/samples_roots2.csv")
 
 ### ==============================
-## 1.4 read the HTSeq files in a matrix
+##  read the HTSeq files in a matrix
 ## names are set according to the sample.csv!
 ### ==============================
 res <- mclapply(dir("htseq_technical_replicates",pattern="*.txt",full.names=TRUE),function(fil){
   read.delim(fil,header=FALSE,stringsAsFactors=FALSE)
 },mc.cores=9)
 names(res) <- sub(".*_P1406_","",sub("_sortmerna_trimmomatic_STAR.txt","",dir("htseq_technical_replicates",pattern="*.txt")))
-#names(res) <- sub(".*_P1406_","P1406",sub("_sortmerna_trimmomatic_STAR.txt","",dir("htseq_technical_replicates",pattern="*.txt")))
 
 names(res) <- samples$SampleName[match(names(res),samples$ID)]
 
@@ -70,8 +69,8 @@ count.table <- count.table[,order(colnames(count.table))]
 head(count.table)
 #ACA VOY y count table esta Ok
 dim(count.table)
-### ===========2. Creat the frame of work ===================
-## 2.1 Create filters
+### =========== Creat the frame of work ===================
+##  Create filters
 ### ==============================
 
 names <- sub("P1406_","",colnames(count.table))
@@ -79,7 +78,7 @@ samples <- substr(x=colnames(count.table),1,10)
 treatments <- substr(x=colnames(count.table),1,8)
 
 ### ==============================
-## 2.2 create the design matrix - this is the design for my biological question
+## create the design matrix - this is the design for my biological question
 ### ==============================
 df <- data.frame (
   name=names,
@@ -90,7 +89,7 @@ df
 head(df)
 
 ### ==============================
-## 2.2 create dds object
+##  create dds object
 ### ==============================
 dds <- DESeqDataSetFromMatrix(countData = count.table,
                               colData = df,
@@ -106,7 +105,7 @@ sizeFactors(dds)
 dds <- estimateDispersions(dds)
 plotDispEsts(dds)
 
-### ===========3. Negative binomial Wald Test===================
+### =========== Negative binomial Wald Test===================
 ## run the test - negative binomial Wald test (takes a long time!)
 ### ==============================
 dds <- nbinomWaldTest(dds)
@@ -115,7 +114,7 @@ dds <- nbinomWaldTest(dds)
 ## create ddsC (for comparison by condition)
 ### ==============================
 ddsC <- dds
-### ===========4. Methods and Functions===================
+### =========== Methods and Functions===================
 ## 
 ### ==============================
 setGeneric(name="VolcanoPlotMA",def=function(object,alpha=0.01){
@@ -187,7 +186,7 @@ setMethod(f="plotMA",
           })
 
 ##########################################################
-####============5. Comparison of groups ==================
+####============ Comparison of groups ==================
 ##########################################################
 
 ddsG <- DESeq(dds)
@@ -337,7 +336,7 @@ sessionInfo()
 ## [5] LC_MONETARY=en_US.UTF-8 LC_MESSAGES=en_US.UTF-8
 ## [7] LC_PAPER=en_US.UTF-8 LC_NAME=C
 ## [9] LC_ADDRESS=C LC_TELEPHONE=C
-23
+
 ## [11] LC_MEASUREMENT=en_US.UTF-8 LC_IDENTIFICATION=C
 ##
 ## attached base packages:

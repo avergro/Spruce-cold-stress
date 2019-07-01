@@ -59,7 +59,7 @@ sel <- match(addInfo,res[[1]][,1])
 #count.table <- do.call(cbind,lapply(res,"[",3))[-sel,]
 count.table <- do.call(cbind,lapply(res,"[",2))[-sel,]
 
-###REVISAR
+###
 colnames(count.table) <- names(res)
 rownames(count.table) <- res[[1]][,1][-sel]
 #dir.create(file.path("analysis","HTSeq"),recursive = TRUE, showWarnings = FALSE)

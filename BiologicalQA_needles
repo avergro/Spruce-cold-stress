@@ -26,8 +26,6 @@ suppressPackageStartupMessages(library(vsn))
 
 #' Source some helper functions
 source("~/Git/UPSCb/src/R/plot.multidensity.R")
-#source("~/Git/UPSCb/src/R/plotMA.R")
-#source("~/Git/UPSCb/src/R/volcanoPlot.R")
 #' ```{r detach, echo=FALSE, eval=FALSE}
 #' detach("package:limma")
 #' ```
@@ -38,12 +36,12 @@ pal <- brewer.pal(8,"Dark2")
 mar <- par("mar")
 
 #' Read the sample information
-samples <- read.csv("~/Git/UPSCb/projects/spruce_cold_stress/spruce-needles-cold-stress/samples2.csv")
+samples <- read.csv("~/samples2.csv")
 head(samples)
 samples$ID
 #' Create a result dir
  system("mkdir ANALYSIS_NEEDLES")
-outdir <- file.path("ANALYSIS_NEEDLES","2017_manuscript_version")
+outdir <- file.path("ANALYSIS_NEEDLES","manuscript_version")
 dir.create(outdir,showWarnings=FALSE)
 
 

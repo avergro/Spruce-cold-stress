@@ -220,8 +220,7 @@ legend("top", legend = popIDs,
        col=as.numeric(popIDs),
        inset = -0.25, xpd = TRUE, horiz = TRUE)
 ##DONE
-# add legend using x, y coordinates to position legend
-#legend(6, 6, pch=as.numeric(popIDs), col=as.numeric(popIDs), legend=popIDs)
+# 
 ###########################################
 # Now we try using all the labels of sub-populations
 head(samples)
@@ -237,8 +236,7 @@ s3d <- scatterplot3d(pc$x[,1],
                      pch=as.numeric(samples$SampleID),
                      y.margin.add=1)
 s3d
-# add legend using x, y coordinates to position legend
-#legend(6, 6, pch=as.numeric(popIDs), col=as.numeric(popIDs), legend=popIDs)
+# 
 # add legend
 legend(6,5, legend = popIDs,
        pch = as.numeric(popIDs), 

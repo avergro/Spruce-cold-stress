@@ -120,12 +120,7 @@ plot.multidensity(log10(count.table),
                   main="sample raw counts distribution",
                   xlab="per gene raw counts (log10)")
 
-#' # Data normalisation 
-#'  For visualization, the data is
-#' submitted to a variance stabilization
-#' transformation using DESeq2. The 
-#' dispersion is estimated independently
-#' of the sample tissue and replicate
+#' # Data normalisation using DESeq2. 
 
 #' Create the dds object
 conditions <- colnames(count.table)

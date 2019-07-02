@@ -1,13 +1,11 @@
-	Running title: Surviving winter- the Norway spruce cold transcriptome
-	Author for correspondence:
-Vaughan Hurry 
-Umeå Plant Science Centre, Department of Forest Genetics and Plant Physiology, Swedish University of Agricultural Sciences, SE901 83 Umeå, Sweden.
-e-mail: vaughan.hurry@slu.se
+	
+Running title: Surviving winter- the Norway spruce cold transcriptome
 
-	Title: Norway spruce deploys canonical and delayed cold acclimation responses in a  tissue-specific manner. 
+Title: Norway spruce deploys canonical and delayed cold acclimation responses in a  tissue-specific manner. 
  
 Authors 
 	Alexander Vergara1*, Julia C Haas2*, Paulina Stachula2, Nathaniel R Street2 and Vaughan Hurry1
+
 # Spruce-cold-stress
 
 Here guides used in Spruce's transcriptomics data analysis are included.

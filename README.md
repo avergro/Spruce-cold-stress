@@ -1,4 +1,6 @@
 
+# Spruce-cold-stress
+
 Running title: Surviving winter- the Norway spruce cold transcriptome
 
 Title: Norway spruce deploys canonical and delayed cold acclimation responses in a  tissue-specific manner. 
@@ -9,8 +11,6 @@ Affiliations
 	1Umeå Plant Science Centre, Department of Forest Genetics and Plant Physiology, Swedish University of Agricultural Sciences, SE901 83 Umeå, Sweden. 2Umeå Plant Science Centre, Department of Plant Physiology, Umeå University, SE901 87 Umeå, Sweden.
 
 
-
-# Spruce-cold-stress
 
 Here guides used in Spruce's transcriptomics data analysis are included.
 

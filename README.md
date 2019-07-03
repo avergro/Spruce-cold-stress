@@ -1,3 +1,13 @@
+Here guides used in Spruce's transcriptomics data analysis are included.
+
+This directory contains Biological Quality Analysis (BiologicalQA) and Differential Expression (DE) scripts for each tissue (needles and roots) and details about the steps followed to analyze the publication data.  
+
+RNA-Seq pipeline and accesory code like plot.multidensity.R script which is necessary for BiologicalQA analysis deveolped by Bioinformatics UPSC groups is avilable here:
+https://microasp.upsc.se/root/UPSCb
+
+A detailed version of the workflow is available on Wiki:
+https://github.com/avergro/Spruce-cold-stress/wiki.
+
 
 # Spruce-cold-stress
 
@@ -11,17 +21,15 @@ Authors
 Affiliations	
 	1Umeå Plant Science Centre, Department of Forest Genetics and Plant Physiology, Swedish University of Agricultural Sciences, SE901 83 Umeå, Sweden. 2Umeå Plant Science Centre, Department of Plant Physiology, Umeå University, SE901 87 Umeå, Sweden.
 
+# Abstract
 
 
-Here guides used in Spruce's transcriptomics data analysis are included.
 
-This directory contains Biological Quality Analysis (BiologicalQA) and Differential Expression (DE) scripts for each tissue (needles and roots) and details about the steps followed to analyze the publication data.  
+# Data availability
 
-RNA-Seq pipeline and accesory code like plot.multidensity.R script which is necessary for BiologicalQA analysis deveolped by Bioinformatics UPSC groups is avilable here:
-https://microasp.upsc.se/root/UPSCb
-
-A detailed version of the workflow is available on Wiki:
-https://github.com/avergro/Spruce-cold-stress/wiki.
-
+Sequencing data are available at the European Nucleotide Archive (ENA) as accession PRJEB26934.
 
 # References
+
+http://www.epigenesys.eu/en/protocols/bio-informatics/1283-guidelines-for-rna-seq-data-analysis
+

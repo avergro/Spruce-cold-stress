@@ -23,7 +23,7 @@ Authors
 2. Umeå Plant Science Centre, Department of Plant Physiology, Umeå University, SE901 87 Umeå, Sweden.
 
 ### Short Title: 
-## Norway spruce deploys canonical and delayed cold acclimation responses in a  tissue-specific manner. 
+### Norway spruce deploys canonical and delayed cold acclimation responses in a  tissue-specific manner. 
  
 ## Abstract
 

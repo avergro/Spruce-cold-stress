@@ -24,4 +24,4 @@ A detailed version of the workflow is available on Wiki:
 https://github.com/avergro/Spruce-cold-stress/wiki.
 
 
-Reference
+# References

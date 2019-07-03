@@ -8,7 +8,7 @@ RNA-Seq pipeline and accesory code necessary for BiologicalQA analysis deveolped
 https://github.com/UPSCb/UPSCb
 
 A detailed version of the workflow is available on Wiki:
-https://github.com/avergro/Spruce-cold-stress/wiki.
+https://github.com/avergro/Spruce-cold-stress/wiki/Spruce-cold-stress-wiki
 
 
 ### Running title: 

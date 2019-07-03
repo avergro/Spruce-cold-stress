@@ -12,7 +12,8 @@ A detailed version of the workflow is available on Wiki:
 https://github.com/avergro/Spruce-cold-stress/wiki.
 
 
-## Running title: Surviving winter- the Norway spruce cold transcriptome
+### Running title: 
+## Surviving winter- the Norway spruce cold transcriptome
 
 
 Authors 

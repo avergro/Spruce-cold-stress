@@ -1,3 +1,6 @@
+
+# Spruce-cold-stress
+
 Here guides used in Spruce's transcriptomics data analysis are included.
 
 This directory contains Biological Quality Analysis (BiologicalQA) and Differential Expression (DE) scripts for each tissue (needles and roots) and details about the steps followed to analyze the publication data.  
@@ -9,9 +12,7 @@ A detailed version of the workflow is available on Wiki:
 https://github.com/avergro/Spruce-cold-stress/wiki.
 
 
-# Spruce-cold-stress
-
-Running title: Surviving winter- the Norway spruce cold transcriptome
+# Running title: Surviving winter- the Norway spruce cold transcriptome
 
 Title: Norway spruce deploys canonical and delayed cold acclimation responses in a  tissue-specific manner. 
  

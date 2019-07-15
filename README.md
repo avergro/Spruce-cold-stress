@@ -37,5 +37,4 @@ Sequencing data are available at the European Nucleotide Archive (ENA) as access
 
 ## References
 
-http://www.epigenesys.eu/en/protocols/bio-informatics/1283-guidelines-for-rna-seq-data-analysis
-
+Delhomme et. al. (2014) Guidelines for RNA-Seq data analysis. EpyGeneSys Protocol (prot 67). https://http://www.epigenesys.eu/en/protocols/bio-informatics/1283-guidelines-for-rna-seq-data-analysis

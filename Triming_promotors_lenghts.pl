@@ -1,6 +1,6 @@
 #!/usr/bin/perl -w
 
-#This script take FASTA sequences as input in one row (.prepared file input) 
+#This script take FASTA sequences as input in one row (.prepared file input) and take 1 Kb upstream
 
 my $file = shift @ARGV;
 
@@ -16,14 +16,15 @@ if ($seq =~ /^>/) {
 
 
 
-$seqend = substr($seq,0,10);
+$seqend = substr($seq,0,30);
 chomp $seqend;
 print $seqend,"\n";
 } else {
-$seqend2 = substr($seq,-692);
+$seqend2 = substr($seq,-1000);
 chomp $seqend2;
 print $seqend2,"\n";
 
 }
 }
 }
+

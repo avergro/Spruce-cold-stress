@@ -204,8 +204,6 @@ head(res0)
 VolcanoPlotMA(res0,alpha=0.01)
 sum(res0$padj <= 0.01,na.rm=TRUE)
 plot(density(res0$log2FoldChange[res0$padj <= .01 & !is.na(res0$padj)]))
-table(sign(res0$log2FoldChange[res0$padj <= .01 & !is.na(res0$padj)]))
-table(sign(res0$log2FoldChange[res0$padj <= .01 & !is.na(res0$padj) & abs(res0$log2FoldChange)>=2]))
 
 write.table(res0,file.path(outdir,"control_vs_6h_5_°C.txt"))
 
@@ -220,8 +218,6 @@ head(res1)
 VolcanoPlotMA(res1,alpha=0.01)
 sum(res1$padj <= 0.01,na.rm=TRUE)
 plot(density(res1$log2FoldChange[res1$padj <= .01 & !is.na(res1$padj)]))
-table(sign(res1$log2FoldChange[res1$padj <= .01 & !is.na(res1$padj)]))
-table(sign(res1$log2FoldChange[res1$padj <= .01 & !is.na(res1$padj) & abs(res1$log2FoldChange)>=2]))
 
 write.table(res1,file.path(outdir,"control_vs_24h_5_°C.txt"))
 
@@ -235,8 +231,6 @@ head(res2)
 VolcanoPlotMA(res2,alpha=0.01)
 sum(res2$padj <= 0.01,na.rm=TRUE)
 plot(density(res2$log2FoldChange[res2$padj <= .01 & !is.na(res2$padj)]))
-table(sign(res2$log2FoldChange[res2$padj <= .01 & !is.na(res2$padj)]))
-table(sign(res2$log2FoldChange[res2$padj <= .01 & !is.na(res2$padj) & abs(res2$log2FoldChange)>=2]))
 
 write.table(res2,file.path(outdir,"control_vs_3d_5_°C.txt"))
 
@@ -250,8 +244,6 @@ head(res3)
 VolcanoPlotMA(res3,alpha=0.01)
 sum(res3$padj <= 0.01,na.rm=TRUE)
 plot(density(res3$log2FoldChange[res3$padj <= .01 & !is.na(res3$padj)]))
-table(sign(res3$log2FoldChange[res3$padj <= .01 & !is.na(res3$padj)]))
-table(sign(res3$log2FoldChange[res3$padj <= .01 & !is.na(res3$padj) & abs(res3$log2FoldChange)>=2]))
 
 write.table(res3,file.path(outdir,"control_vs_10d_5_°C.txt"))
 ####
@@ -265,8 +257,6 @@ head(res4)
 VolcanoPlotMA(res4,alpha=0.01)
 sum(res4$padj <= 0.01,na.rm=TRUE)
 plot(density(res4$log2FoldChange[res4$padj <= .01 & !is.na(res4$padj)]))
-table(sign(res4$log2FoldChange[res4$padj <= .01 & !is.na(res4$padj)]))
-table(sign(res4$log2FoldChange[res4$padj <= .01 & !is.na(res4$padj) & abs(res4$log2FoldChange)>=2]))
 
 write.table(res4,file.path(outdir,"control_vs_6h_-5_°C.txt"))
 
@@ -281,8 +271,6 @@ head(res5)
 VolcanoPlotMA(res5,alpha=0.01)
 sum(res5$padj <= 0.01,na.rm=TRUE)
 plot(density(res5$log2FoldChange[res5$padj <= .01 & !is.na(res5$padj)]))
-table(sign(res5$log2FoldChange[res5$padj <= .01 & !is.na(res5$padj)]))
-table(sign(res5$log2FoldChange[res5$padj <= .01 & !is.na(res5$padj) & abs(res5$log2FoldChange)>=2]))
 
 write.table(res5,file.path(outdir,"control_vs_24h_-5_°C.txt"))
 ########
@@ -296,8 +284,6 @@ head(res6)
 VolcanoPlotMA(res6,alpha=0.01)
 sum(res6$padj <= 0.01,na.rm=TRUE)
 plot(density(res6$log2FoldChange[res6$padj <= .01 & !is.na(res6$padj)]))
-table(sign(res6$log2FoldChange[res6$padj <= .01 & !is.na(res6$padj)]))
-table(sign(res6$log2FoldChange[res6$padj <= .01 & !is.na(res6$padj) & abs(res6$log2FoldChange)>=2]))
 
 write.table(res6,file.path(outdir,"control_vs_3d_-5_°C.txt"))
 
@@ -315,9 +301,6 @@ head(res7)
 VolcanoPlotMA(res7,alpha=0.01)
 sum(res7$padj <= 0.01,na.rm=TRUE)
 plot(density(res7$log2FoldChange[res7$padj <= .01 & !is.na(res7$padj)]))
-table(sign(res7$log2FoldChange[res7$padj <= .01 & !is.na(res7$padj)]))
-table(sign(res7$log2FoldChange[res7$padj <= .01 & !is.na(res7$padj) & abs(res7$log2FoldChange)>=2]))
-
 
 write.table(res7,file.path(outdir,"control_vs_10d_-5_°C.txt"))
 

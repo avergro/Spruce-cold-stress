@@ -37,16 +37,4 @@ Sequencing data are available at the European Nucleotide Archive (ENA) as access
 
 ## References
 
-Anders S, Pyl PT, Huber W (2015) HTSeq--a Python framework to work with high-throughput sequencing data. Bioinformatics 31: 166-169
-
-Bolger AM, Lohse M, Usadel B (2014) Trimmomatic: a flexible trimmer for Illumina sequence data. Bioinformatics 30: 2114-2120
-
 Delhomme et. al. (2014) Guidelines for RNA-Seq data analysis. EpyGeneSys Protocol (prot 67). https://http://www.epigenesys.eu/en/protocols/bio-informatics/1283-guidelines-for-rna-seq-data-analysis
-
-Dobin A, Davis CA, Schlesinger F, Drenkow J, Zaleski C, Jha S, Batut P, Chaisson M, Gingeras TR (2013) STAR: ultrafast universal RNA-seq aligner. Bioinformatics 29: 15-21
-
-Kopylova E, Noe L, Touzet H (2012) SortMeRNA: fast and accurate filtering of ribosomal RNAs in metatranscriptomic data. Bioinformatics 28: 3211-3217
-
-Levitt J (1980) Responses of plants to environmental stresses / Vol.1, Chilling, freezing and high temperature stresses, Ed 2nd ed. Academic Press, New York ; London
-
-Love MI, Huber W, Anders S (2014) Moderated estimation of fold change and dispersion for RNA-seq data with DESeq2. Genome Biol 15: 550

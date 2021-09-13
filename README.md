@@ -14,7 +14,7 @@ https://github.com/avergro/Spruce-cold-stress/wiki/Spruce-cold-stress-wiki
 
 
 ### Running title: 
-## Surviving winter- the Norway spruce cold transcriptome
+## Norway spruce deploys tissue-specific cold acclimation responses
 
 
 Authors 
@@ -25,11 +25,12 @@ Authors
 2. Umeå Plant Science Centre, Department of Plant Physiology, Umeå University, SE901 87 Umeå, Sweden.
 
 ### Short Title: 
-### Norway spruce deploys canonical and delayed cold acclimation responses in a  tissue-specific manner. 
+### Surviving winter: the Norway spruce cold transcriptome
+
  
 ## Abstract
 
-Cold acclimation in plants is a complex phenomenon that involves a number of different stress-responsive transcriptional and metabolic pathways.  Most gene expression studies have addressed short-term cold acclimation responses in herbaceous plants while few have focused on long-term cold responses, and even fewer have investigated perennial evergreens such as conifers, which survive extremely low temperatures during winter. To characterize the transcriptome changes during cold acclimation in Picea abies (L.) H. Karst (Norway spruce), we performed RNA-Sequencing analysis of needles and roots subjected to cold treatments through a chilling progression (5 °C) until 10 days at freeze temperature (-5 °C). Comparing gene expression responses of needles against Arabidopsis thaliana L. (Arabidopsis) leaves, our results showed that early transient inductions were observed in both species but the transcriptional response of Norway spruce was delayed. Our results indicate that, similar to herbaceous species, Norway spruce principally utilizes early response transcription factors (TF) that belong to the AP2/ERF superfamily and NACs. However, unique to the Norway spruce response was a large group of TFs that mounted a late transcriptional response to low temperature. A regulatory network analysis identified key TFs, including a root-specific bHLH101-like and other members of the same family with a pervasive role in cold regulation, such as ICE1 and AKS3-like and also members of the NAC (anac47 and anac28-like) and AP2/ERF superfamilies (DREB2 and ERF3-like), providing new functional insights into cold stress response strategies in Norway spruce.
+Cold acclimation in plants is a complex phenomenon involving numerous stress-responsive transcriptional and metabolic pathways. Existing gene expression studies have primarily addressed cold acclimation responses in herbaceous plants, few have focused on perennial evergreens, such as conifers, that survive extremely low temperatures during winter. To characterize the transcriptome changes during cold acclimation in Picea abies (L.) H. Karst (Norway spruce), we performed RNA-Sequencing analysis of needles and roots subjected to a chilling progression (5 °C) followed by 10 days at freezing temperature (-5 °C). Comparing gene expression responses of needles against Arabidopsis thaliana L. (Arabidopsis) leaves, our results showed that early transient inductions were observed in both species, but the main transcriptional response of Norway spruce was delayed and was associated with slower cold acclimation. Despite this difference in timing, our results indicate that, similar to herbaceous species, Norway spruce principally utilizes early response transcription factors (TFs) of the APETALA 2/ethylene-responsive element binding factor (AP2/ERF) superfamily and NAM (no apical meristem)/ATAF (Arabidopsis Transcription Factors)/CUC (cup shaped cotyledon) (NACs). However, unique to the Norway spruce response was a large group of TFs that mounted the late transcriptional response to low temperature. Regulatory network analysis identified key conserved TFs, including a root-specific bHLH101 homolog and other members of the same family with a pervasive role in cold regulation, such as homologs of ICE1 and AKS3 and also homologs of the NAC (anac47 and anac28) and AP2/ERF superfamilies (DREB2 and ERF3), providing new functional insights into cold stress response strategies in Norway spruce.
 
 ## Data availability
 

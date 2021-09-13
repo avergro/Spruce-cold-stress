@@ -18,7 +18,7 @@ https://github.com/avergro/Spruce-cold-stress/wiki/Spruce-cold-stress-wiki
 
 
 Authors 
-	Alexander Vergara1*, Julia Haas2*, Paulina Stachula2, Nathaniel Street2 and Vaughan Hurry1
+	Alexander Vergara1*, Julia Haas2*, Tuuli Aro1, Paulina Stachula2, Nathaniel Street2 and Vaughan Hurry1
 
 ### Affiliations	
 1. Umeå Plant Science Centre, Department of Forest Genetics and Plant Physiology, Swedish University of Agricultural Sciences, SE901 83 Umeå, Sweden. 

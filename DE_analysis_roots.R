@@ -302,7 +302,7 @@ write.table(res7,file.path(outdir,"control_vs_10d_-5_°C.txt"))
 sessionInfo()
 
 
-###### End
+##### End
 ## R version 3.4.0 (2017-04-21)
 ## Platform: x86_64-pc-linux-gnu (64-bit)
 ## Running under: Ubuntu 16.04.2 LTS

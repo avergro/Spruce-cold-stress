@@ -243,7 +243,7 @@ legend(6,5, legend = popIDs,
        col=as.numeric(popIDs),
        inset = -0.25, xpd = TRUE, horiz = FALSE)
 
-###########Done
+#########Done
 
 ##########################################################################################
 #Now PCA using colours to distigish how deep the dots are in 3D and their names

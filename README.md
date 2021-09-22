@@ -14,7 +14,7 @@ https://github.com/avergro/Spruce-cold-stress/wiki/Spruce-cold-stress-wiki
 
 
 ### Running title: 
-## Norway spruce deploys tissue-specific cold acclimation responses
+## Norway spruce deploys tissue-specific responses during acclimation to cold
 
 
 Authors 
